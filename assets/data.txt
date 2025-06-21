@@ -1,0 +1,16 @@
+cueilleur,1
+bucheron,3
+constructeur,5
+mineur,10
+agriculteur,15
+chercheur,20
+pecheur,25
+lancier,30
+archer,35
+cabane,1
+grange,2
+mine,4
+grange_grande,3
+cabane_grande,3
+foresterie,1
+monolythe,0

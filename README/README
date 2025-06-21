@@ -1,0 +1,118 @@
+
+CE PROJET EST ECRIT PAR "ROBERT Sacha"
+LE JEU SE LANCE DANS LE FICHIER "main.py"
+CE JEU NECESSITE LES BIBLIOTHEQUES SUIVANTES
+"arcade","random","numpy","os","json"
+
+CE JEU EST SOUS LICENCE. EN L EXECUTANT 
+VOUS ACCEPTEZ LES TERMES DE LA LICENCE
+
+NE FAITE RIEN QUI PUISSE ENDOMAGER LE LOGICIEL
+VOUS ETES RESPONSABLE DE CE QUE VOUS FAITES.
+
+Sont présents:
+-6 fichiers audio en [.ogg] "musique libre de droit trouvé sur le site pixabay"
+-105 tuiles du jeu [.png] "images libres de droit"
+-9 scripts python [.py]
+-1 fichier de licence
+
+Dans le code est présents:
+-16 class Python
+-130 fonctions
+
+"""DISCLAIMER"""
+Ce jeu n'est qu'une beta.
+Il ne représente en rien le jeu finale
+IL manque encore beaucoup d'elements de gameplay
+Merci d'etre indulgent
+
+#fonctionnalitées qui ne fonctionne pas
+-> le jeu ralentit lorsque les personnages charge un chemin Astar
+-> plusieurs metiers ne sont pas encore implémentés
+-> la vague d'ennemie n'as pas été encore implémentés
+-> l'arbre de recherche est beugé
+
+#fonctionnalitées qui fonctionne
+-> création de partie ( Espace Latent )
+-> supprimer une partie
+-> renommé une partie
+-> sauvegarder une partie
+-> reprendre une partie
+
+-> arbre de technologie ( logo fleche verte ou rouge selon le nombre de points d'amelioration )
+-> poser des batiments ( menu construction, logo du batiments)
+-> pause du jeu ( logo pause ou reprise )
+-> affichage du chemin emprinté par les personnages ( logo fleche bleu )
+-> enregistrement ( logo de casette ) ou en tapant sur la touche "s"
+-> retour ( logo maison )
+
+-> affichage du plateau de jeu ainsi qu'une gui pour changer les metiers des personnages
+-> changement de filtre ( en tapant sur TAB)
+-> affichage des ressources sur la partie haut gauche ( nourriture , buche , roche)
+
+-> deplacement des personnages selon leurs metiers ( Astar )
+-> mouvement de camera pour se deplacé mais sans zoom ( non implémenté, encore par arcade)
+-> musiques intégrés au jeu
+
+#fonctionnalitées qui pourrait etre rajoutées
+-> nouvelle arbre de technologie ( force )
+-> page de reglage ( fps , reglage du son)
+-> developpement d'un village ennemie
+-> plus de vague d'ennemie intermediaire
+-> plus de batiments de défence, d'attaque ( canon , tour )
+-> systeme de combats
+-> faire des animations pour tout les batiments
+-> faire des animations pour les personnages ( population et ennemies)
+
+
+"""WIKI DU JEU"""
+
+Votre village commence avec une simple pierre.
+Pour vous develloper vous avez accès au choix des metiers 
+de vos personnages et uniquement. Vous avez egalements 2 arbres de compétences.
+Au bout de 600 secondes, (10 min) une vague ennemie vous attaque.
+
+Chaque sauvegarde est un dossier, dans le dossier nommé "data".
+chaque sauvegarde est composée de 8 fichiers en ".desciv"
+  -map.desciv ( cartes generées au debut)
+  -batiments.desciv ( batiments, positions, statue)
+  -forets.desciv ( arbres,sapins)
+  -monolythe.desciv ( monolythe)
+  -character.desciv ( personnages[positions, vie, job])
+  -updates ( améliorations debloqués )
+  -settings.desciv (réglages in-game)
+  -ressources.desciv (ressources recupéré in-game)
+
+
+Il existe 10 métiers différents qui se débloquent
+progressivement, dans l'ordre suivant:
+
+chômeur -> les nouveaux personnages sont par défaut, chômeurs, et ne font rien.
+cueilleur -> récupère les fruits les plus proches
+bûcheron -> coupe les arbres les plus proches
+constructeur -> essentiel à la construction des bâtiments du village
+mineur -> récupère de la pierre dans la mine la plus proche
+agriculteur -> transforme la terre en terre fertile et fait pousser des plantes
+chercheur -> se balade sur la carte afin de trouver des innovations
+pêcheur -> récupère du poisson dans les lacs puis le rapporte à la grange
+lancier -> se balade autour du village afin de le protéger face aux ennemis
+archer -> se balade autour du village afin de protéger le monolithe
+
+"""FIN DU WIKI"""
+
+
+Dans cette version 0.91.
+
+IL y'a 4 metiers existants. ( chomeur, cueilleur, bucheron, constructeur)
+Toutes les constructions sont disponibles ( mais non utilisable )
+,de plus elles ne coutent aucune resssource.
+Seul la monolithe à une animation.
+
+La population ne peut depasser, les 3 de population.
+Car il y'a des problemes de ralentissement du jeu, dès qu'il y'a plus de population.
+
+Le nombre de points de bâtiments augmente à chaque fois qu’une construction est construite.
+Le nombre de points de capacités augmente à chaque fois qu’une action est terminé.
+
+Ce code est servit tel quel, il est sensible à la casse
+Merci de votre patience.
